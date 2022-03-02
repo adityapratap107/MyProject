@@ -3,11 +3,18 @@ import { View, Text, StyleSheet, Pressable } from 'react-native';
 import Header from '../../common/header';
 import DatePicker from 'react-native-date-picker';
 import { Platform } from 'react-native';
+import { useQueryClient } from 'react-query';
 
 
 const Settings = () => {
     const [count, setCount] = useState(0);
     const [counts, setCounts] = useState(0);
+
+
+    const queryClient = useQueryClient();
+    queryClient.refetchQueries({ queryKey: 'post2' })
+
+
     const onPress1 = () => {
         setCount(count + 1);
     }

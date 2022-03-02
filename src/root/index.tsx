@@ -31,7 +31,6 @@ const Root = () => {
     // React Query
     const queryClient = new QueryClient();
 
-
     return (
         <QueryClientProvider client={queryClient}>
             <HeaderColorContext.Provider value={{ isGreen, setIsGreen }}>

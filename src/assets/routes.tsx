@@ -8,7 +8,13 @@ const routes = {
       },
       forgotPassword: {
         NAME: "ForgotPassword"
-      }
+      },
+      signIn: {
+        NAME: "Signin"
+      },
+      query: {
+        NAME: "Query"
+      },
     },
     dashboard: {
       NAME: "Dashboard",
